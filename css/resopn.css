@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+@media screen and (max-width : 1200px) {
+    nav ul li a {
+        margin: 10px 110px;
+    }
+    .tab-menu ul {
+        flex-wrap: wrap;
+    }
+    .profile-skill .progress-area .progress {
+        flex-basis: calc(40% - 40px); /* Adjust the percentage value and margin as needed */
+    }
+    .tab-menu li {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .contact-detail {
+        width: 8%; /* 필요에 따라 조정 */
+        font-size: 0.8rem; /* 필요에 따라 조정 */
+    }
+    .contact-message {
+        font-size: 0.8rem;
+    }
+    .contactForm {
+        height: 43rem;
+    }
+    .popup iframe {
+        width: 80%;
+        height: 500px;
+    }
+}
+@media screen and (max-width : 1100px){
+    .contact-detail {
+        width: 8%; /* 필요에 따라 조정 */
+        font-size: 0.7rem; /* 필요에 따라 조정 */
+    }
+    .btn-confirm {
+        font-size: 0.8rem;
+    }
+    .frm-input {
+        padding: 0.4rem;
+    }
+    .contactForm-agree1 {
+        font-size: 0.8rem;
+    }
+    .contactForm .contactForm-agree2 {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+    .color-btn {
+        line-height: 2rem;
+        padding: 0 1.5rem;
+        border-radius: 1rem;
+    }
+    .contactForm {
+        height: 40rem;
+    }
+}
+@media screen and (max-width : 1024px) {
+    nav ul li a {
+        font-size: 18px;
+        margin: 10px 80px;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .education {
+        margin-top: 40px;
+    }
+    .abu-box strong,
+    .abu-box .detail,
+    .edu-text,
+    .vision-text {
+        font-size: 0.9rem;
+    }
+    .info-txt, .info-txt1 {
+        margin: 10px;
+    }
+    .profile-skill .title {
+        margin: 0 10%;
+    }
+    .profile-skill .progress-area .progress {
+        margin: 10px;
+        flex-basis: calc(80% - 40px); /* Adjust the percentage value and margin as needed */
+    }
+    .contactForm {
+        height: 36rem;
+    } 
+    .contact-detail {
+        font-size: 0.7rem; /* 필요에 따라 조정 */
+    }
+    .contactForm-agree1 {
+        font-size: 0.7rem;
+    }
+    .btn-confirm {
+        font-size: 0.7rem;
+    }
+    .frm-input {
+        padding: 0.3rem;
+        font-size: 0.7rem;
+    }
+    .contactForm-agree1 {
+        font-size: 0.7rem;
+    }
+    .contactForm .contactForm-agree2 {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    .contact-message  {
+        height: 20vh;
+        font-size: 0.7rem;
+    }
+    .color-btn {
+        line-height: 1.5rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+    }
+    .popup iframe {
+        width: 70%;
+        height: 400px;
+    }
+}
+@media screen and (max-width : 940px) {
+    .tbl-wrap li {
+        padding-top: 0.4rem;
+    }
+    .contact-detail {
+        font-size: 0.6rem; /* 필요에 따라 조정 */
+    }
+    .contactForm-agree1 {
+        font-size: 0.6rem;
+    }
+    .btn-confirm {
+        font-size: 0.6rem;
+    }
+    .tbl-wrap .frm-input {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+    }
+    .info-txt, .info-txt1 {
+        margin: 5px;
+    }
+    .contactForm {
+        height: 34rem;
+    }
+    .contactForm-agree1 {
+        font-size: 0.6rem;
+    }
+    .contactForm .contactForm-agree2 {
+        font-size: 0.6rem;
+        padding: 0.4rem;
+    }
+    .contact-message  {
+        height: 14vh;
+        font-size: 0.6rem;
+    }
+    .color-btn {
+        line-height: 1.5rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    nav ul li a {
+        font-size: 16px;
+        margin: 8px 50px;
+    }
+    nav {
+        display: none;
+    }
+    .mobile-btn {
+        display: block;
+    }
+    .logo{
+        margin: 1% 5%;
+        position: fixed;
+        z-index: 999;
+    }
+    .main-title {
+        padding: 120px 0 40px;
+    }
+    .main-title span {
+        top: 120px;
+    }
+    .abu-box strong,
+    .abu-box .detail,
+    .edu-text,
+    .vision-text {
+        font-size: 0.8rem;
+    }
+    .tab-item .content-box {
+        padding: 30px 0;
+    }
+    .info-video {
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .profile-skill .progress-area .progress {
+        flex-basis: calc(80% - 100px); /* Adjust the margin as needed */
+    }
+    .content-box {
+        flex-direction: column;
+    }
+    .contact-message {
+        height: 12vh;
+    }
+    .popup iframe {
+        width: 80%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 730px){ 
+    .tbl-wrap li {
+        padding-top: 0.2rem;
+    }
+    .contact-detail {
+        font-size: 0.5rem; /* 필요에 따라 조정 */
+    }
+    .contactForm-agree1 {
+        font-size: 0.5rem;
+    }
+    .btn-confirm {
+        font-size: 0.5rem;
+    }
+    .tbl-wrap .frm-input {
+        padding: 0.1rem;
+        font-size: 0.4rem;
+    }
+    .info-txt, .info-txt1 {
+        margin: 5px;
+    }
+    .contactForm {
+        height: 34rem;
+    }
+    .contactForm-agree1 {
+        font-size: 0.4rem;
+    }
+    .contactForm .contactForm-agree2 {
+        font-size: 0.4rem;
+        padding: 0.1rem;
+    }
+    .contact-message  {
+        height: 12vh;
+        font-size: 0.4rem;
+    }
+    .color-btn {
+        line-height: 1.5rem;
+        padding: 0 0.8rem;
+        border-radius: 1rem;
+    }
+}
+@media screen and (max-width: 630px){ 
+    .tbl-wrap li {
+        padding-top: 0.1rem;
+    }
+    .contact-detail {
+        font-size: 0.3rem; /* 필요에 따라 조정 */
+        width: 10%;
+    }
+    .contactForm-agree1 {
+        font-size: 0.3rem;
+    }
+    .btn-confirm {
+        font-size: 0.5rem;
+    }
+    .tbl-wrap .frm-input {
+        padding: 0.1rem;
+        font-size: 0.4rem;
+    }
+    .info-txt, .info-txt1 {
+        margin: 5px;
+    }
+    .contactForm {
+        height: 29rem;
+    }
+    .contactForm-agree1 {
+        font-size: 0.2rem;
+    }
+    .contactForm .contactForm-agree2 {
+        font-size: 0.2rem;
+        padding: 0.1rem;
+    }
+    .contact-message  {
+        height: 10vh;
+        font-size: 0.4rem;
+    }
+    .color-btn {
+        line-height: 1.5rem;
+        padding: 0 0.8rem;
+        border-radius: 1rem;
+    }
+}
+

@@ -1,0 +1,582 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: "SB Aggro";
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: "SB Aggro";
+}
+h2 {
+    font-size: 36px;
+}
+p {
+    font-family: "SB Aggro";
+    font-size: 16px;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap {
+    width: 100%;
+    position: relative;
+}
+.main-title {
+    text-align: center;
+    padding: 120px 0 80px 0;
+    position: relative;
+}
+.material-icons {
+    color: #262a56;
+}
+.icon {
+    font-size: 42px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "SB Aggro";
+}
+label {
+    cursor: pointer;
+}
+/* mobile-btn */
+.mobile-btn {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 99;
+    cursor: pointer;
+    display: none;
+
+}
+.mobile-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.mobile-btn span:nth-child(2) {
+    width: 20px;
+}
+.mobile-btn span:nth-child(3) {
+    width: 10px;
+}
+.mobile-btn.on span:nth-child(1){
+    transform: rotate(45deg) translateY(14px);   
+}
+.mobile-btn.on span:nth-child(3){
+    transform: rotate(-45deg) translateY(-14px);
+    width: 30px;
+}
+.mobile-btn.on span:nth-child(2) {
+   opacity: 0;
+}
+.mobile-btn.on span {
+    background-color: #fff;
+}
+/* mobile menu */
+.mobile-nav {
+    position: fixed;
+    z-index:98;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    padding: 80px 40px 40px;
+    transition: right .5s;
+}
+.mobile-nav.on {
+    right: 0;
+}
+.mobile-nav li {
+    position: relative;
+}
+.mobile-nav li a {
+    display: block;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 80px 25px;  
+    padding-bottom: 7px;  
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+.mobile-nav li:hover a {
+    color: #ff3399;
+}
+.mobile-nav li.active a {
+    color: #ff3399;
+}
+/* window mask */
+.window-mask {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 97;
+    transition: .5s;
+}
+.window-mask.on {
+    opacity: 1;
+    visibility: visible;
+}
+/* header 영역 */
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: 999;
+}
+header .container {   
+}
+.logo {
+    display: block;
+    width: 10%;
+    margin: 0 45.8%;
+    height: auto;
+}
+.logo a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo a img {
+    width: 100%;
+    max-height: 120px; /* Adjust the max height as needed */
+}
+/* headder-bottom 영역*/
+.header-bottom {
+    background-color: #000;
+}
+.header-bottom .container {}
+.header-bottom .navigation {}
+
+header nav {
+    margin-top: 180px;
+    margin: 0 auto;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {}
+nav ul li.on a {
+    color: #ff3399;
+}
+nav ul li:hover a {
+    color: #ff3399;
+}
+nav ul li a {
+    display: block;
+    margin: 10px 140px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+/* main 영역 */
+main {
+    margin-top: 7%;
+}
+/* about 영역 */
+.main-title span {
+    position: absolute;
+    top: 120px;
+    color: rgba(0,0,0,.2);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 0;
+    font-family: "SB Aggro";
+}
+.about-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about {
+    width: 80%;
+    margin: 0 5%;
+}
+.abu-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.abu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increase the margin-bottom value */
+}  
+.abu-box .icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    height: 43px;
+}
+  
+.abu-box .title {
+    flex-grow: 1;
+    margin-top: 8px; /* Add margin-top to move down the title */
+}
+.abu-box ul {
+    margin-left: 10px;
+}
+.abu-box ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.abu-box strong {
+    font-family: "SB Aggro";
+    margin-right: 5px;
+}
+.abu-box .detail {
+    font-family: "SB Aggro";
+}
+.education {
+    width: 80%;
+    margin: 5% 5% 0;
+}
+.edu-box .edu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increase the margin-bottom value */
+}
+  
+.edu .icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    height: 43px;
+}
+.edu-text {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-weight: 700;
+}  
+.edu .title {
+    flex-grow: 1;
+    margin-top: 8px; /* Add margin-top to move down the title */
+}
+.vision {
+    width: 80%;
+    margin: 5% 5% 0;
+}
+.vis-box .vis {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increase the margin-bottom value */
+}
+.vis .icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    height: 43px;
+}
+.vision-text {
+    display: inline-block;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+.vision-text1 {
+    padding: 1rem;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.profile-skill {
+    margin-top: 5%;
+    width: 100%;
+    overflow: hidden; /* Add this line to hide any overflowing content */
+}
+.profile-skill .title {
+    margin-left: 10%;
+}
+.profile-skill .progress-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile-skill .progress-area .progress {
+    margin: 20px;
+    flex-basis: calc(40% - 40px); /* Adjust the percentage value and margin as needed */
+}
+.profile-skill .progress-area .progress p {
+    margin-bottom: 5px;
+}
+.profile-skill .progress-area .progress .progressbar-text {
+    left: 90% !important;
+    top: 30% !important;
+    color: #000 !important;
+    font-size: 12px !important;
+    font-family: "SB Aggro" !important;
+}
+/* Tab Menu */
+.portfolio .container{
+    width: 100%;
+    margin: 0 auto;
+}
+.tab-menu {
+    text-align: center; /* Center-align the tab menu */
+}
+.tab-menu ul {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+.tab-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.tab-menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}  
+.tab-menu li.active a {
+    background-color: #262a56;
+    color: #fff;
+    border-radius: 5px;
+}  
+/* Tab Content */
+.tap-content {
+    width: 100%;
+}
+.tab-content .tab-item {
+    width: 100%;
+    display: none;
+}
+.tab-content .tab-item.active {
+    display: block;
+}
+.tab-item .content-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding: 60px 0;
+}
+.content-box .info-txt {
+    width: 80%;
+    margin: 0 5%;
+}
+.content-box .info-txt1 {
+    width: 80%;
+    margin: 0 5%;
+}
+.info-txt p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.info-txt p span {
+    font-weight: bold;
+    display: inline-block;
+}
+.info-video {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.info-video a img {
+    transition: 0.5s;
+    width: 100%;
+    border-radius: 10px;
+}
+.hover-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3 ease;
+}
+.info-video:hover .hover-gif {
+    opacity: 1;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+.popup-content iframe {
+    width: 100%; /* 영상의 가로 크기를 조정 */
+    height: 100%; /* 영상의 세로 크기를 조정 */
+}
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+/* contact 영역 */
+.contact .container {
+    width: 100%;
+    margin: 0 auto;
+}
+.contactForm {
+    width: 100%;
+    height: 45rem;
+    background: url(../imgaes/mail2.png) no-repeat top;
+    position: relative;
+    background-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 6%; /* 적절한 값으로 조정 */
+  }
+/* .contactForm-form {
+    top: 4.3rem;
+    left: 4rem;
+    position: absolute;
+    width: 89.5%;
+} */
+.contactForm-form {
+    width: 80%; /* 적절한 너비 설정 */
+  }
+.tbl-wrap {
+    position: relative;
+    width: 100%;
+}
+.tbl-wrap li {
+    padding-top: 0.5rem;
+}
+.tbl-wrap li:first-child {
+    padding-top: 0;
+}
+.infut-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.agree-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contactForm-agree1 {
+    width: 80%;
+    font-family: "SB Aggro";
+}
+.contactForm .contactForm-agree2 {
+    width: 60%;
+    border: 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    font-family: "SB Aggro";
+}
+.contactForm-agree2 label {
+    text-align: center;
+    display: inline-block;
+}
+.contactForm-agree2 .checkbox {
+    vertical-align: middle;
+}
+.contact-detail {
+    font-weight: 700;
+    font-family: "SB Aggro";
+    display: inline-block;
+    width: 10%;
+    margin-left: 10%;
+}
+.frm-input {
+    width: 70%;
+    padding: 0.5rem;
+    border: 0;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.contact-message {
+    font-family: "SB Aggro";
+    height: 22vh;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.btn-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-btn {
+    display: inline-block;
+    line-height: 2.5rem;
+    color: #fff;
+    padding: 0 2rem;
+    border-radius: 1.25rem;
+    border-width: 0;
+    background-color: #000;
+    margin: 0.6rem;
+}
+.color-btn:hover {
+    background-color: #262a56;
+}
+/* footer 영역 */
+footer {
+    background-color: #000;
+}
+footer .container {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}

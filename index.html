@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Jquery lib -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- progessbar.js -->
+    <script  src="js/progressbar.min.js"></script>
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/resopn.css">
+    <script defer src="js/Portfolio.js"></script>
+</head>
+<body>
+    <div class="wrap">
+    <!-- mobile용 btn -->
+        <div class="mobile-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <!-- mobile menu -->
+        <ul class="mobile-nav">
+            <li>
+                <a href="#About Me">About Me</a>
+            </li>
+            <li>
+                <a href="#Portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+        </ul>  
+        <div class="window-mask"></div>  
+    <!-- header 영역 -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="imgaes/logo4.png" alt="">
+                    </a>    
+                </h1>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navigation">                       
+                    <ul>
+                        <li>
+                            <a href="#About Me" id="menu-about">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#Portfolio" id="menu-portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" id="menu-contact">Contact</a>
+                        </li>
+                    </ul>                    
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main id="main">
+            <!-- about-me -->
+            <section class="about-me" id="About Me">
+                <div class="container">
+                    <div class="main-title">
+                        <span>About Me</span>
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="about-container">
+                        <div class="about">
+                            <div class="abu-box">
+                                <div class="abu">
+                                    <span class="material-icons icon">
+                                        person
+                                    </span>
+                                    <span class="title">Profile</span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span class="material-icons">
+                                            chevron_right
+                                        </span>
+                                        <strong>Name :</strong>
+                                        <span class="detail">권민준</span>
+                                    </li>
+                                    <li>
+                                        <span class="material-icons">
+                                            chevron_right
+                                        </span>
+                                        <strong>City :</strong>
+                                        <span class="detail">Daegu</span>
+                                    </li>
+                                    <li>
+                                        <span class="material-icons">
+                                            chevron_right
+                                        </span>
+                                        <strong>Birth :</strong>
+                                        <span class="detail">1999.07.01</span>
+                                    </li>
+                                    <li>
+                                        <span class="material-icons">
+                                            chevron_right
+                                        </span>
+                                        <strong>Email :</strong>
+                                        <span class="detail">kmj3336@naver.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div class="edu-box">
+                                <div class="edu">
+                                    <span class="material-icons icon">
+                                        auto_stories
+                                    </span>
+                                    <span class="title">Education</span>
+                                </div>
+                                <p class="edu-text">대구공업고등학교 졸업 2015.03~2018.02</p>
+                                <p class="edu-text">그린아트컴퓨터학원 대구 영상편집과정 수료 2023.01~2023.06</p>
+                            </div>
+                        </div>
+                        <div class="vision">
+                            <div class="vis-box">
+                                <div class="vis">
+                                    <span class="material-icons icon">
+                                        visibility
+                                    </span>
+                                    <span class="title">Vision</span>
+                                </div>
+                                <p class="vision-text">#탁월한 편집 기술과 창의적인 시각적 아이디어로 사람들의 시선을 사로잡습니다</p>
+                                <p  class="vision-text">#사람들에게 영감을 주는 창작물을 만듭니다.</p>
+                                <p class="vision-text">#강력한 시각 효과와 몰입감 있는 편집으로 새로운 경험을 선사합니다</p>
+                            </div>
+                        </div>
+                        <div class="profile-skill">
+                            <span class="title">SKILL</span>
+                            <div class="progress-area">
+                                <div class="progress" id="ae">
+                                    <p>After Effect</p>
+                                </div>
+                                <div class="progress" id="ap">
+                                    <p>Primiere Pro</p>
+                                </div>
+                                <div class="progress" id="ps">
+                                    <p>Photo Shop</p>
+                                </div>
+                                <div class="progress" id="html">
+                                    <p>Html</p>
+                                </div>
+                                <div class="progress" id="css">
+                                    <p>Css</p>
+                                </div>
+                                <div class="progress" id="js">
+                                    <p>Js</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio -->
+            <section class="portfolio" id="Portfolio">
+                <div class="container">
+                    <div class="main-title">
+                        <span>Portfolio</span>
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="tab-menu">
+                        <ul>
+                          <li class="active"><a href="#tab1">Live 2D</a></li>
+                          <li><a href="#tab2">Poster</a></li>
+                          <li><a href="#tab3">Etc</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-content">
+                        <div id="tab1" class="tab-item active">
+                          <!-- Content for Tab 1 goes here --> 
+                          <div class="content-box">
+                              <div class="info-txt">
+                                <p>
+                                    <span>개인 프로젝트 :</span>
+                                    League of Legends - Anivia
+                                </p>
+                                <p>
+                                    <span>카테고리 :</span>
+                                    Live 2D
+                                </p>
+                                <p>
+                                    <span>제작 기간 :</span>
+                                    14일
+                                </p>
+                                <p>
+                                    <span>사용 프로그램 :</span>
+                                    Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro
+                                </p>
+                                <p>
+                                    <span>설명 :</span>
+                                    모션을 주기 위해 에프터 이펙트로 
+                                    익스프레션을 사용 하였습니다.
+                                </p>
+                              </div>
+                              <div class="info-video">
+                                <a href="https://youtu.be/UBBdmm0Akmc" class="list popup-link" data-video-url="https://www.youtube.com/embed/UBBdmm0Akmc" target="_blank">
+                                    <img src="imgaes/live2d.PNG" alt="">
+                                    <img src="imgaes/Live 2D gif.gif" alt="" class="hover-gif">
+                                </a>
+                              </div>
+                          </div>
+                          <div class="content-box">
+                              <div class="info-video">
+                                <a href="#" class="list popup-link" target="_blank">
+                                    <img src="imgaes/03bc8b7bcca94e52d1cd6a41806a967d2f25f520.jpg" alt="">
+                                </a>
+                              </div>
+                            <div class="info-txt">
+                              <p>
+                                  <span>개인 프로젝트 :</span>
+                                  귀멸의 칼날 - 젠이츠
+                              </p>
+                              <p>
+                                  <span>카테고리 :</span>
+                                  Live 2D
+                              </p>
+                              <p>
+                                  <span>제작 기간 :</span>
+                                  14일
+                              </p>
+                              <p>
+                                  <span>사용 프로그램 :</span>
+                                  Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro
+                              </p>
+                              <p>
+                                  <span>설명 :</span>
+                                  모션을 주기 위해 에프터 이펙트로 
+                                  익스프레션을 사용 하였습니다.
+                              </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="tab2" class="tab-item">
+                          <!-- Content for Tab 2 goes here -->
+                          <div class="content-box">
+                              <div class="info-txt">
+                                <p>
+                                    <span>개인 프로젝트 :</span>
+                                    자동차
+                                </p>
+                                <p>
+                                    <span>카테고리 :</span>
+                                    Car Animation
+                                </p>
+                                <p>
+                                    <span>제작 기간 :</span>
+                                    7일
+                                </p>
+                                <p>
+                                    <span>사용 프로그램 :</span>
+                                    Adobe After Effects, Adobe Premiere Pro
+                                </p>
+                                <p>
+                                    <span>설명 :</span>
+                                    패스로 자동차를 그려 익스프레션을 활용해 자동차가 움직이는것을 표현하였습니다.
+                                </p>
+                              </div>
+                              <div class="info-video">
+                                <a href="https://www.youtube.com/embed/KR_J9_XgLmI" class="list popup-link" target="_blank"data-video-url="https://www.youtube.com/embed/KR_J9_XgLmI">
+                                    <img src="imgaes/카.png" alt="">
+                                    <img src="imgaes/Car.gif" alt="" class="hover-gif">
+                                </a>
+                              </div>
+                          </div>
+                          <div class="content-box">
+                            <div class="info-video">
+                                <a href="#" class="list popup-link" target="_blank" >
+                                    <img src="imgaes/카.png" alt="">
+                                </a>
+                              </div>
+                            <div class="info-txt">
+                              <p>
+                                  <span>개인 프로젝트 :</span>
+                                  자동차
+                              </p>
+                              <p>
+                                  <span>카테고리 :</span>
+                                  Car Animation
+                              </p>
+                              <p>
+                                  <span>제작 기간 :</span>
+                                  7일
+                              </p>
+                              <p>
+                                  <span>사용 프로그램 :</span>
+                                  Adobe After Effects, Adobe Premiere Pro
+                              </p>
+                              <p>
+                                  <span>설명 :</span>
+                                  패스로 자동차를 그려 익스프레션을 활용해 자동차가 움직이는것을 표현하였습니다.
+                              </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="tab3" class="tab-item">
+                          <!-- Content for Tab 3 goes here -->
+                          <div class="content-box">
+                            <div class="info-txt">
+                              <p>
+                                  <span>개인 프로젝트 :</span>
+                                  자동차
+                              </p>
+                              <p>
+                                  <span>카테고리 :</span>
+                                  Car Animation
+                              </p>
+                              <p>
+                                  <span>제작 기간 :</span>
+                                  7일
+                              </p>
+                              <p>
+                                  <span>사용 프로그램 :</span>
+                                  Adobe After Effects, Adobe Premiere Pro
+                              </p>
+                              <p>
+                                  <span>설명 :</span>
+                                  패스로 자동차를 그려 익스프레션을 활용해 자동차가 움직이는것을 표현하였습니다.
+                              </p>
+                            </div>
+                            <div class="info-video">
+                              <a href="#" class="list popup-link" target="_blank">
+                                  <img src="imgaes/카.png" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="content-box">
+                            <div class="info-video">
+                                <a href="#" class="list popup-link" target="_blank" >
+                                    <img src="imgaes/live2d.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="info-txt">
+                              <p>
+                                  <span>개인 프로젝트 :</span>
+                                  League of Legends - Anivia
+                              </p>
+                              <p>
+                                  <span>카테고리 :</span>
+                                  Live 2D
+                              </p>
+                              <p>
+                                  <span>제작 기간 :</span>
+                                  14일
+                              </p>
+                              <p>
+                                  <span>사용 프로그램 :</span>
+                                  Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro
+                              </p>
+                              <p>
+                                  <span>설명 :</span>
+                                  모션을 주기 위해 에프터 이펙트로 
+                                  익스프레션을 사용 하였습니다.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="content-box">
+                            <div class="info-txt">
+                              <p>
+                                  <span>개인 프로젝트 :</span>
+                                  자동차
+                              </p>
+                              <p>
+                                  <span>카테고리 :</span>
+                                  Car Animation
+                              </p>
+                              <p>
+                                  <span>제작 기간 :</span>
+                                  7일
+                              </p>
+                              <p>
+                                  <span>사용 프로그램 :</span>
+                                  Adobe After Effects, Adobe Premiere Pro
+                              </p>
+                              <p>
+                                  <span>설명 :</span>
+                                  패스로 자동차를 그려 익스프레션을 활용해 자동차가 움직이는것을 표현하였습니다.
+                              </p>
+                            </div>
+                            <div class="info-video">
+                              <a href="#" class="list popup-link" target="_blank">
+                                  <img src="imgaes/카.png" alt="">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                    </div>
+                  </div>
+            </section>
+            <!-- contact -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="main-title">
+                        <span>Contact</span>
+                        <h2>Contact</h2>
+                    </div>
+                    <form action="https://formspree.io/f/xbjevjbv" class="contactForm" method="POST">
+                        <div class="contactForm-form">
+                            <div class="tbl-wrap">
+                                <ul>
+                                    <li>
+                                        <label for="contact-name" class="contact-detail">Name</label>
+                                        <input type="text" name="contact-name" class="frm-input" placeholder="Name" required>
+                                    </li>
+                                    <li>
+                                        <label for="contact-email" class="contact-detail">E-mail</label>
+                                        <input type="email" name="contact-email" class="frm-input" placeholder="E-mail">
+                                    </li>
+                                    <li>
+                                        <label for="contact-subject" class="contact-detail">Subject</label>
+                                        <input type="text" name="contact-subject" class="frm-input" placeholder="Subject" required>
+                                    </li>
+                                    <li>
+                                        <div class="agree-text">
+                                            <div class="contactForm-agree1">본인은 개인정보 보호법 제15조에 의거하여 본인의 개인정보(이메일)를 제공할 것을 동의합니다.</div>
+                                            <fieldset class="contactForm-agree2">
+                                                <label for="agree">개인정보 수집 내용에 동의합니다.</label>
+                                                <input type="checkbox" name="aggre" class="checkbox">
+                                            </fieldset>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <textarea name="contact-message" id="contact-message" rows="10" class="contact-message" placeholder="홈페이지를 이용하시다가 궁금하신 점이 있으시면 언제든지 문의해 주세요." required ></textarea>
+                                    </li>
+                                </ul>
+                                <div class="btn-confirm">
+                                    <input type="submit" class="btn-submit color-btn" value="SEND MAIL">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    </main>
+    <footer>
+            <div class="container">
+                <p>Copyright &copy; NugulK Portfolio, All right reserved.</p>
+            </div>
+    </footer>
+    </div>
+</body>
+</html>

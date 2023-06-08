@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../MAIN PAGE - PORTFOLIO"
+		},
+		{
+			"path": "../mememi-clone 2"
+		},
+		{
+			"path": "../tap_menu_basic"
+		},
+		{
+			"path": "../tap_menu_base"
+		},
+		{
+			"path": "../tapmenu-cgv"
+		},
+		{
+			"path": "../ProgressBar"
+		},
+		{
+			"path": "../ONESCROLLSITE"
+		},
+		{
+			"path": "../contact"
+		},
+		{
+			"path": "../project1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project"
+	}
+}
